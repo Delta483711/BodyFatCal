@@ -23,7 +23,8 @@ public class BodyFatCal {
             System.out.println("Enter your Weight(Kg)");
             double Weight = Sc.nextDouble();
 
-            double BMI = Weight / (Height/100);
+            //Calculation for  Getting BMI
+            double BMI = Weight / (Height/100 * Height/100);
 
             System.out.println("your BMI is "
                     + BMI);
