@@ -42,8 +42,7 @@ public class BodyFatCal {
 
             double BFP = (1.20 * BMI) + (0.23 * Age) - (10.8 * Gender) - 5.4;
 
-            System.out.println("Your Body Fat Percentage is: " + BFP);
-
+            System.out.println("Your Body Fat Percentage is: " +  df.format(BFP) + "%");
 
         }
         else if(input.equals("No")){
