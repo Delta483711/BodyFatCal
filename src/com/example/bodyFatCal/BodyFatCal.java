@@ -1,6 +1,7 @@
 package com.example.bodyFatCal;
 
 //Import
+import java.text.DecimalFormat;
 import java.util.*;
 
 public class BodyFatCal {
@@ -8,6 +9,7 @@ public class BodyFatCal {
     public static void main(String[] args) {
 
         Scanner Sc = new Scanner(System.in);
+        DecimalFormat df = new DecimalFormat("0.00");
 
         System.out.println("This is the First Iteration of the App " +
                 "that will Calculate Body Fat Percentage. Type Yes to continue or No to Leave");
@@ -27,7 +29,7 @@ public class BodyFatCal {
             double BMI = Weight / (Height/100 * Height/100);
 
             System.out.println("your BMI is "
-                    + BMI);
+                    +  df.format(BMI));
         }
         else if(input.equals("No")){
             System.out.println("Thank you.");
