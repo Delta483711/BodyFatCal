@@ -30,6 +30,15 @@ public class BodyFatCal {
 
             System.out.println("your BMI is "
                     +  df.format(BMI));
+
+            //Ask for Age
+            System.out.println("Enter your Age");
+            double Age = Sc.nextDouble();
+
+            //Ask for Gender
+            System.out.println("Enter your Gender 1 for Male 2 for Female");
+            double Gender = Sc.nextDouble();
+
         }
         else if(input.equals("No")){
             System.out.println("Thank you.");
