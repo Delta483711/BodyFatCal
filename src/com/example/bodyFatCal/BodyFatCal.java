@@ -6,6 +6,7 @@ import java.util.*;
 
 public class BodyFatCal {
 
+
     public static void main(String[] args) {
 
         Scanner Sc = new Scanner(System.in);
@@ -38,6 +39,11 @@ public class BodyFatCal {
             //Ask for Gender
             System.out.println("Enter your Gender 1 for Male 2 for Female");
             double Gender = Sc.nextDouble();
+
+            double BFP = (1.20 * BMI) + (0.23 * Age) - (10.8 * Gender) - 5.4;
+
+            System.out.println("Your Body Fat Percentage is: " + BFP);
+
 
         }
         else if(input.equals("No")){
