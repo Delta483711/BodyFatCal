@@ -1,10 +1,9 @@
 package com.example.bodyFatCal;
 
 //Import
-import java.util.Scanner;
+import java.util.*;
 
 public class BodyFatCal {
-
 
     public static void main(String[] args) {
 
@@ -12,14 +11,22 @@ public class BodyFatCal {
 
         System.out.println("This is the First Iteration of the App " +
                 "that will Calculate Body Fat Percentage. Type Yes to continue or No to Leave");
-        String  input = Sc.nextLine();
+        String input = Sc.nextLine();
 
+        //if Statement
         if(input.equals("Yes")){
+            //Ask for Height
             System.out.println("Enter your Height (Cm)");
-            float Height = Sc.nextFloat();
+            double Height = Sc.nextDouble();
 
+            //Ask for Weight
             System.out.println("Enter your Weight(Kg)");
-            float Weight = Sc.nextFloat();
+            double Weight = Sc.nextDouble();
+
+            double BMI = Weight / (Height/100);
+
+            System.out.println("your BMI is "
+                    + BMI);
         }
         else if(input.equals("No")){
             System.out.println("Thank you.");
