@@ -8,7 +8,6 @@
 #Declare Variables 
 
 Age = 30;
-Age = 0;
 Height = 178;
 Weight = 80 ;
 Gender = 1  # 1 = Male, 0 = Female
@@ -20,13 +19,6 @@ BMI = Weight / (Height/100 * Height/100);
 
 # Print the results 
 
-print("Your BMI is:"); 
-print(round(BMI,1));
-
-
-# Logic for BMI 
-
-BMI = Weight / (Height/100 * Height/100);
 print("Your BMI is:"); 
 print(round(BMI,1));
 
