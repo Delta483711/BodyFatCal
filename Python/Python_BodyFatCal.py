@@ -3,10 +3,12 @@
 
 #----------------------------------------------------------------------------------------#
 
+
 # Create whole program 1st iteration - hard coded
 
 #Declare Variables 
 
+#BMI = 0;
 Age = 0;
 Height = 178;
 Weight = 80 ;
